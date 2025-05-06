@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_artist.css">
+    <title>Мероприятия</title>
+</head>
+<body>
+    <header>
+        <h1>Валентин Губарев</h1>
+        <p>Современный художник, мастер ироничного реализма</p>
+    </header>
+
+    <nav>
+        <a href="html_artist.html">О художнике</a>
+        <a href="html_gallery.html">Галерея</a>
+        <a href="html_events.html">Мероприятия</a>
+        <a href="html_contact.html">Контакты</a>
+    </nav>
+
+    <div class="container">
+        <section id="events" class="section event-section">
+            <h2>Мероприятия</h2>
+            <div id="eventsContainer">
+            </div>
+        </section>        
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Валентин Губарев. Все права защищены.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // закоментированно мероприятие - выводится "нет мероприятий", если его раскоментировать оно будет показано на странице
+
+            const events = [
+                // {
+                //     title: "Выставка \"Городской реализм\"",
+                //     date: "15 мая 2025",
+                //     location: "Музей современного искусства, Минск",
+                //     description: "Персональная выставка Валентина Губарева, посвящённая жизни и быту городского жителя. Экспозиция включает более 40 работ разных лет.",
+                //     link: "https://museum.by/event/gubarev2025",
+                //     linkText: "Подробнее"
+                // },
+
+                // {
+                //     title: "Мастер-класс \"Живопись повседневности\"",
+                //     date: "10 марта 2025",
+                //     location: "Арт-центр \"Палитра\", Гомель",
+                //     description: "Погружение в творческий процесс: техники, идеи и композиционные решения в повседневной живописи. Мероприятие прошло в формате открытого диалога с художником.",
+                //     link: "https://art-palette.by/events/masterclass-gubarev",
+                //     linkText: "Фотоотчёт"
+                // }
+            ]; 
+
+            const container = document.getElementById("eventsContainer");
+
+            if (events.length === 0) {
+                container.innerHTML = `
+                    <div class="centered-content">
+                        <img src="problem-statement_18011084.png" alt="Нет мероприятий" style="max-width: 300px; margin-bottom: 20px;">
+                        <p>На данный момент мероприятий не запланировано.</p>
+                    </div>
+                `;
+            } else {
+                events.forEach(event => {
+                    const eventDiv = document.createElement("div");
+                    eventDiv.classList.add("event");
+                    eventDiv.innerHTML = `
+                        <h3>${event.title}</h3>
+                        <p><strong>Дата:</strong> ${event.date}</p>
+                        <p><strong>Место:</strong> ${event.location}</p>
+                        <p>${event.description}</p>
+                        <p><a href="${event.link}" target="_blank">${event.linkText}</a></p>
+                    `;
+                    container.appendChild(eventDiv);
+                });
+            }
+        });
+    </script>
+    
+</body>
+</html>

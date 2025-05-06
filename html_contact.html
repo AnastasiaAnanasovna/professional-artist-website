@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_artist.css">
+    <title>Связь с художником</title>
+</head>
+<body>
+    <header>
+        <h1>Валентин Губарев</h1>
+        <p>Современный художник, мастер ироничного реализма</p>
+    </header>
+
+    <nav>
+        <a href="html_artist.html">О художнике</a>
+        <a href="html_gallery.html">Галерея</a>
+        <a href="html_events.html">Мероприятия</a>
+        <a href="html_contact.html">Контакты</a>
+    </nav>
+    
+    <div class="container">
+        <section id="contact" class="section">
+            <h3>Здесь вы можете написать свои предложения или задать вопросы известному художнику</h3>
+            <h2>Связаться с художником</h2>
+            <form class="contact-form">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea rows="5" placeholder="Ваше сообщение" required></textarea>
+            <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Валентин Губарев. Все права защищены.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const form = document.querySelector(".contact-form");
+      
+          form.addEventListener("submit", (e) => {
+            e.preventDefault(); 
+
+            form.reset();
+      
+            alert("Ваше сообщение успешно отправлено нашему художнику! Мы рады, что вы посетили наш сайт, будем ждать вас снова!");
+          });
+        });
+    </script>
+      
+</body>
+</html>
+

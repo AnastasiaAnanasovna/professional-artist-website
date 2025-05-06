@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css_artist.css">
+  <title>Валентин Губарев - Художник</title>
+</head>
+<body>
+  <header>
+    <h1>Валентин Губарев</h1>
+    <p>Современный художник, мастер ироничного реализма</p>
+  </header>
+
+  <nav>
+    <a href="html_artist.html">О художнике</a>
+    <a href="html_gallery.html">Галерея</a>
+    <a href="html_events.html">Мероприятия</a>
+    <a href="html_contact.html">Контакты</a>
+  </nav>
+
+  <div class="container">
+    <section id="about" class="section">
+      <h2>О художнике</h2>
+      <div class="about-container">
+        <img src="https://avatars.mds.yandex.net/get-entity_search/70370/164469122/SUx182_2x" alt="Валентин Губарев">
+        <div class="about-text-wrapper">
+          <div class="about-text" id="about-text">
+            <p>
+              <span class="short-text">
+                  Белорусский художник Валентин Алексеевич Губарев родился в Нижнем Новгороде 14 апреля 1948 года.
+                  <br>Успешно закончил сначала Горьковское художественное училище, а затем фактультет графики Московского Полиграфического Института.
+              </span>
+              <span class="full-text">
+                <br>С 1975 года живет в Беларуси. Работал иллюстратором и художником в книжном издательстве. С 1991 года принимает активное участие в выставках.
+                <br>Удивительные работы Валентина Алексеевича получили высокую оценку и признание во многих странах, а также являются предметом коллекционирования среди ценителей наивной живописи, жанра, который художник выбрал для своих творений. Член Белорусского Союза Художников.
+                <br>Валентин Губарев — художник, чьи работы наполнены иронией, жизненной мудростью и трогательной бытовой эстетикой. Его картины рассказывают истории простых людей, передают настроение и атмосферу постсоветского пространства.
+                <br>Персонажи его картин - обычные, простые люди, которые проживают свою жизнь со всеми её горестями и радостями. Они наивны, бескорыстны и чисты душой.
+                <br>Произведения Валентина Губарева находятся в Национальном художественном музее Беларуси, музее "Zimmerly Art Museum" (США), галереях "Schaer und Wildbolz" (Швейцария), "Kunststuck" (Германия), "Les Tournesols" (Франция), а также в частных коллекциях России, США, Англии, Японии, Испании, Израиля, Германии, Франции, Австрии, Бельгии, Польши и Турции.
+              </span>
+            </p>
+            <a href="#" id="read-more">Читать больше ↓</a>
+          </div>
+        </div>
+      </div>
+      
+      <section class="featured-artworks section">
+        <h2>Избранные картины</h2>
+        <div class="artwork-grid">
+          <img src="https://avatars.dzeninfra.ru/get-zen_doc/1866101/pub_64d1f10e2b4a526efeee7f26_64d20201709f35482878a127/scale_1200" alt="У меня тоже будет Новый год" class="fullscreenable">
+          <img src="https://avatars.dzeninfra.ru/get-zen_doc/1640581/pub_64d1f10e2b4a526efeee7f26_64d1f8e3e419222ace1d6d69/scale_1200" alt="Осень" class="fullscreenable">
+          <img src="https://avatars.dzeninfra.ru/get-zen_doc/10131288/pub_64d1f10e2b4a526efeee7f26_64d1fa5b2b4a526efe033453/scale_1200" alt="По небу лодочка плыла" class="fullscreenable">
+        </div>
+      
+        <blockquote class="artist-quote">
+          «…мои персонажи на картинах — это люди из обычной жизни. У некоторых немного не хватает счастья, но они об этом даже не подозревают»
+        </blockquote>
+      </section>
+      <dialog id="image-dialog">
+        <img id="dialog-img" src="" alt="">
+      </dialog>
+      
+      <section id="popular-gallery" class="section">
+        <h2>Известные картины художника</h2>
+        <div class="slider">
+          <button id="prev">&#8592;</button>
+          <img id="slider-image" src="https://artchive.ru/res/media/img/oy800/work/659/9262918@2x.webp" alt="Окно в Париж">
+          <button id="next">&#8594;</button>
+        </div>
+      </section>
+      
+      <div class="view-all-button">
+        <a href="html_gallery.html" class="btn-view-all">Посмотреть все работы</a>
+      </div>
+    </section>
+  </div>
+  <section class="cta-section">
+    <div class="cta-overlay">
+      <a href="html_contact.html" class="cta-button">Связаться с художником</a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Валентин Губарев. Все права защищены.</p>
+  </footer>
+
+  
+  <script src="js_artist.js"></script>
+</body>
+</html>
